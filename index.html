@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- =============main================ -->
+    <div class="parent flex items-center justify-center h-screen">
+
+        <div class="w-[500px] mx-auto bg-green-200 p-6 rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <h1 class="font-bold text-center text-2xl text-[#A800CC] mb-10">Guessing Game</h1>
+
+            <div class="displayOne flex justify-center items-center flex-col">
+                <label for="playerOne" class="block font-bold text-white text-2xl">Player 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 text-4xl font-bold">One</span>
+                </label>
+                <input type="number" class="playerInputOne my-5 w-full px-4 py-2 border rounded-md" placeholder="enter a number">
+                <p class="massegeOne text-white text-sm text-bold hidden">Number must be between 0 and 10.</p>
+                <p class="requireMessageOne text-white text-sm font-bold hidden">Input require.</p>
+                <button class="btnOne w-2/4 bg-blue-500 text-white py-2 rounded bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% outline-white mt-4">Submit Guess</button>
+            </div>
+
+            <div class="displayTwo flex justify-center items-center flex-col hidden">
+                <label for="playerTwo" class="block font-bold text-white text-2xl">Player 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 text-4xl font-bold">Two</span>
+                </label>
+                <input type="number" class="playerInputTwo my-5 w-full px-4 py-2 border rounded-md" placeholder="enter a number">
+                <p class="massegeTwo text-white text-sm hidden">Number must be between 0 and 10.</p>
+                <p class="requireMessageTwo text-white text-sm font-bold hidden">Input require.</p>
+                <button class="btnTwo w-2/4 bg-blue-500 text-white py-2 rounded bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% outline-white mt-4">Submit Guess</button>
+            </div>
+
+            <div class="WinLoseGame mt-6 text-center text-green-500 font-semibold hidden"></div>
+        </div>
+
+    </div>
+      <!-- =============main================ -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
